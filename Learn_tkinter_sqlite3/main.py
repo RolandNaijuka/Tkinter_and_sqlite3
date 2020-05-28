@@ -89,8 +89,8 @@ def my_portfolio():
     
     def font_color(amount):
         return "green" if amount>=0 else "red"
-
-    api_request = requests.get("https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest?start=1&limit=300&convert=USD&CMC_PRO_API_KEY=330bb561-9e22-45c0-8f8e-9a00c2aab64f")
+    #use the API to coinmarket
+    api_request = requests.get("")
     api = json.loads(api_request.content)
 
     coins = fetch_all()
